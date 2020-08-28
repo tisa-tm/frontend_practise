@@ -1,0 +1,56 @@
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  height: 350px;
+}
+
+.slideshow-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 350px;
+  width: 100%;
+}
+
+@keyframes slide{
+  0% {left: 0%;}
+  /*50%{left: 50%;}*/
+  100% {left: 100%;}
+}
+
+.mySlides {
+  display: none;
+  animation-name: fade;
+  animation-duration: 0.75s;
+}
+
+@keyframes fade {
+  0% {opacity: .2} 
+  25% {opacity: .4}
+  50% {opacity: .6}
+  75% {opacity: .8}
+  100% {opacity: 1}
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+

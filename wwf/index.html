@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style_small.css">
+	<link rel="stylesheet" type="text/css" href="slideshow.css">
+	<link rel="stylesheet" type="text/css" href="style_rainfall.css">
+</head>
+<body>
+	<nav class="navigation">
+		<img class = "logo" src="images/aboutus.jpg">
+		<a style = "margin-left: 100px;" class = "navigation-link" href="#">Home</a>
+		<a class = "navigation-link" href="#">About us</a>
+		<a class = "navigation-link" href="#">Downloads</a>
+		<div class = "dropdown"><a class = "navigation-link" href="#">Dropdown <img src ="images/dropdown.png" height = "9" width = "10">
+			<div class = "dropdown-content">
+				<a href="#">Dropdown 1</a>
+				<!-- <img style = "padding: 0; margin: 0;" src="images/line-gold.png" width = "150" height="1.5"> -->
+				<a href="#">Dropdown 2</a>
+				<!-- <img style = "padding: 0; margin: 0;" src="images/line-gold.png" width = "150" height="1.5"> -->
+				<a href="#">Dropdown 3</a>
+				<!-- <img style = "padding: 0; margin: 0;" src="images/line-gold.png" width = "150" height="1.5"> -->
+			</div>
+		</a>
+		</div>
+	</nav>
+
+
+	<div class="slideshow-container">
+		<!-- Navigation for small screens/ Hamburger Menu -->
+		<div class = "navigation-small-image">
+			<img src="images/navigation (1).png" height="35" width = "50">
+			<div class = "navigation-small">
+				<a class = "navigation-small-link" href="#">Home</a> 
+				<a class = "navigation-small-link" href="#">About us</a>
+				<a class = "navigation-small-link" href="#">Downloads</a>
+				<div class = "navigation-small-dropdown"><a class = "navigation-small-link" href="#">Dropdown<img src ="images/dropdown_small.png" height = "9" width = "10" style = "margin-left: 2px;">
+						<div class = "navigation-small-dropdown-content">
+							<a href="#">Dropdown 1</a>
+							<a href="#">Dropdown 2</a>
+							<a href="#">Dropdown 3</a>
+						</div>
+				</a></div>
+			</div>
+		</div>
+		<div class="mySlides fade">
+				<img class = "slideshow-image" src="images/slideshow (1).jpg">
+		</div>
+		<div class="mySlides fade">
+				<img class = "slideshow-image" src="images/slideshow (4).jpg" style="width:100%">
+		</div>
+		<div class="mySlides fade">
+				<img class = "slideshow-image" src="images/slideshow (3).jpg" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div class = "slideshow-text">
+			<p class = "slideshow-text-header">Welcome!</p>
+			<p class = "slideshow-text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+			<button class = "call-to-action">Learn More</button>
+		</div>
+
+		<div class = "dot-container" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span> 
+			<span class="dot" onclick="currentSlide(2)"></span> 
+			<span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+	</div>
+
+	<div class = "aboutus margin-container">
+		<p class = "aboutus-header">About us</p>
+		<p class = "aboutus-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
+	<div class = "container-news">
+		<p class = "news-section-header">Today's News</p>
+		<div class = "news-section">
+			<div class = "news">
+				<p class = "news-header">NEWS HEADLINE 1</p>
+				<p class = "news-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<span class = "news-date">Aug 18, 2020</span>
+				<a class = "news-readmore" href="#">Read More</a>
+			</div>
+			<div class = "news">
+				<p class = "news-header">NEWS HEADLINE 2</p>
+				<p class = "news-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<span class = "news-date">Aug 18, 2020</span>
+				<a class = "news-readmore" href="#">Read More</a>
+			</div>
+			<div class = "news">
+				<p class = "news-header">NEWS HEADLINE 3</p>
+				<p class = "news-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<span class = "news-date">Aug 18, 2020</span>
+				<a class = "news-readmore" href="#">Read More</a>
+			</div>
+			<div class = "news">
+				<p class = "news-header">NEWS HEADLINE 4</p>
+				<p class = "news-brief">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<span class = "news-date">Aug 18, 2020</span>
+				<a class = "news-readmore" href="#">Read More</a>
+			</div>
+		</div>
+	</div>
+
+	    <img id = "rain" class = "image" src="images/rainfall4.png" alt="an img">
+    <img id = "droplet" class = "image" src="images/droplet (1).png" alt="an img">
+
+	<div class = "footer">
+		<canvas id='canvas'></canvas>
+		<img class = "footer-image" src="images/aboutus.jpg" height = "100" width = "100">
+		<div class = "footer-text">
+			<h1 class = "footer-text-header">Lorem ipsum dolor sit amet</h1>
+			<!-- <img src="images/line-gold.png" width="500"> -->
+			<p class = "footer-text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		</div>	
+	</div>
+	<script type="text/javascript" src = "my.js"></script>
+	<script type="text/javascript" src = "slideshow.js"></script>
+</body>
+</html>

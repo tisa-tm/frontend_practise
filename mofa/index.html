@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style_small.css">
+	<link rel="stylesheet" type="text/css" href="slideshow.css">
+</head>
+<body>
+	<div class = "header">
+		<marquee class = "header-text">Lorem ipsum dolor sit amet</marquee>
+	</div>
+	<div class = "logo-section">
+		<img class = "logo-section-logo" src="images/logo.jpg">
+		<p class = "logo-section-title">Name of Institute</p>
+	</div>
+
+	<nav class="navigation"><div class = "navigation-items">
+		<a class = "navigation-link" href="#">Home</a>
+		<a class = "navigation-link" href="#">About us</a>
+		<a class = "navigation-link" href="#">Downloads</a>
+		<div class = "dropdown"><a class = "navigation-link" href="#">Dropdown <img src ="images/dropdown.png" height = "12" width = "10">
+			<div class = "dropdown-content">
+				<a href="#">Dropdown 1</a>
+				<a href="#">Dropdown 2</a>
+				<a href="#">Dropdown 3</a>
+			</div>
+		</a></div>
+	</div>
+	</nav>
+
+	<div class = "slideshow-container">
+		<!-- Navigation for small screens/ Hamburger Menu -->
+		<div class = "navigation-small-image">
+			<img src="images/navigation (1).png" height="35" width = "50">
+			<div class = "navigation-small">
+				<a class = "navigation-small-link" href="#">Home</a> 
+				<a class = "navigation-small-link" href="#">About us</a>
+				<a class = "navigation-small-link" href="#">Downloads</a>
+				<div class = "navigation-small-dropdown"><a class = "navigation-small-link" href="#">Dropdown<img src ="images/dropdown_small.png" height = "9" width = "10" style = "margin-left: 2px;">
+						<div class = "navigation-small-dropdown-content">
+							<a href="#">Dropdown 1</a>
+							<a href="#">Dropdown 2</a>
+							<a href="#">Dropdown 3</a>
+						</div>
+				</a></div>
+			</div>
+		</div>
+		<div class="mySlides">
+				<img class = "slideshow-image" src="images/slideshow (1).jpg">
+		</div>
+		<div class="mySlides">
+				<img class = "slideshow-image" src="images/slideshow (2).jpg">
+		</div>
+		<div class="mySlides">
+				<img class = "slideshow-image" src="images/slideshow (3).jpg">
+		</div>
+		<!-- <div class="mySlides">
+				<img class = "slideshow-image" src="images/slideshow (4).jpg" style="width:100%">
+		</div> -->
+		<div class="mySlides">
+				<img class = "slideshow-image" src="images/slideshow (5).jpg" style="width:100%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div><br>
+
+	<div class = "column-container">
+	<div class = "tab-container">
+		<div>
+		<button onclick = "changeTab(0)" class = "tab-container-button">Latest News</button>
+		<button onclick = "changeTab(1)" class = "tab-container-button">Downloads</button>
+		<button onclick = "changeTab(2)" class = "tab-container-button">Notices</button>
+		<button onclick = "changeTab(3)" class = "tab-container-button">Mission</button>
+		</div>
+		<div class = "tab-container-view">
+			<div class = "tab-container-tab list" id = "latest-news">
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+			</div>
+
+			<div class = "tab-container-tab" id = "downloads">
+				<a href="#">Download 1</a>
+				<a href="#">Download 2</a>
+				<a href="#">Download 3</a>
+				<a href="#">Download 4</a>
+				<a href="#">Download 5</a>
+			</div>
+			<div class = "tab-container-tab list" id = "notices">
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+			</div>
+			<div class = "tab-container-tab list" id = "mission">
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</a>
+					<p>June 7 2020</p>
+				</div>
+				<div class = "tab-container-tab-individual">
+					<a href="#">Duis aute irure dolor in reprehenderit in voluptate velit esse.</a>
+					<p>June 7 2020</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "people-container">
+		<h1>Quick Links</h1>
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+		<a href="#">Link 4</a>
+		<a href="#">Link 5</a>
+		<a href="#">Link 6</a>
+	</div>
+	</div>
+
+	<div class = "footer">
+		<ul class = "footer-links">
+			<h3>Find us</h3>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+		</ul>
+		<ul class = "footer-links">
+			<h3>Quick Links</h3>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+		</ul>
+		<ul class = "footer-links">
+			<h3>External Links</h3>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+			<li><a href="#">Lorem ipsum dolor</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript" src = "slideshow.js"></script>
+	<script type="text/javascript" src = "script.js"></script>
+</body>
+</html>

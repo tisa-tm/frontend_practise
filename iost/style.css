@@ -1,0 +1,306 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Arial;
+}
+
+body{
+	font-size: 20px;
+}
+
+.header{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/*background: #CBB569;*/
+	background: #65ABFF;
+	width: 100%;
+	position: relative;
+	font-size: 16px;
+}
+
+.header-text{
+	padding: 10px 10px;
+	height: 40px;
+	line-height: 40px;
+	color: white;
+	margin-left: 40px;
+	margin-right: 40px;
+	/*background-color: red;*/
+}
+
+.right{
+	margin-left: auto;
+}
+
+.left{
+	float: left;
+}
+
+.header-image{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.logo-section{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/*background-color: #C0AB62;*/
+	background: #3F96FF;
+	width: 100%;
+	height: 200px;
+}
+
+.logo-section-text{
+	/*margin: 0 auto;*/
+	margin-right: auto;
+	margin-left: 20px;
+	line-height: 200px;
+	color: white;
+}
+
+.logo-image{
+	height: 70px;
+	width: 70px;
+	/*display: inline-block;*/
+	/*vertical-align: middle;*/
+	/*margin-left: 40px;*/
+}
+
+.navigation{
+	/*border-radius: 5px;*/
+	/*width: auto;*/
+	width: 100%;
+	height: 70px;
+	background: #FAFAFA;
+	margin: 0 auto;
+	/*z-index: 1;*/
+	/*position: absolute;*/
+	/*top: 223px;*/
+	/*left: 28%;*/
+	/*margin: 0 auto;*/
+}
+
+.logo{
+	height: 70px;
+	width: 70px;
+	z-index: 2;
+	position: absolute;
+	/*top: 0;*/
+	left: 30px;
+}
+
+.navigation-link{
+	text-decoration: none;
+	line-height: 70px;
+	padding: 0 30px;
+	color: black;
+}
+
+.navigation-link:hover{
+	color: #69C8C0;
+}
+
+.navigation-small-image{
+	display: none;
+}
+
+.navigation-small{
+	display: none;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding: 12px 16px;
+	min-width: 150px;
+	list-style: none;
+	z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+	margin-left: 5px;
+	color: #69C8C0;
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+
+.margin-container-left{
+	margin-left: 40px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	/*margin-right: 40px;*/
+}
+
+.margin-container-right{
+	/*margin-left: 40px;*/
+	margin-right: 40px;
+}
+
+.marging-container-left-right{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.margin-container{
+	margin: 50px 40px;
+}
+
+.main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("images/mainBackground2.jpg");
+	background-size: cover;
+	/*background: #34495E;*/
+	position: relative;
+	height: 500px;
+}
+
+.main-text{
+	margin-left: 20%;
+	margin-right: 20%;
+	color: white;
+	line-height: 1.5;
+}
+
+.call-to-action{
+	background: white;
+	border: solid #0072D3 1px;
+	border-radius: 5px;
+	height: 60px;
+	width: 150px;
+	color: #0072D3;
+	margin-top: 30px;
+}
+
+.call-to-action:hover{
+	background: #0072D3;
+	color: white; 
+}
+
+.aboutus{
+	line-height: 1.5;
+	display: flex;
+	flex-direction: row;
+}
+
+.message{
+	background-color: #FAFAFA;
+	padding: 20px 0px;
+	line-height: 1.5;
+}
+
+.news{
+	display: flex;
+	justify-content: center;
+}
+
+.news ul {
+  list-style-image: url('images/bulletPointer2.png');
+}
+
+.news-section{
+	color: #0072D3;
+	margin-top: 30px;
+}
+
+.news-headline{
+	padding: 10px 10px;
+}
+
+.news-headline:hover{
+	color: #69C8C0;
+}
+
+.page-shifter{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+	width: 30px;
+}
+
+.page-shifter-page{
+	padding: 10px 15px;
+	height: 20px;
+	border-top: solid #69C8C0 1px;
+	border-right: solid #69C8C0 1px;
+	border-bottom: solid #69C8C0 1px;
+	text-decoration: none;
+	color: #0072D3;
+}
+
+.page-shifter-page:hover{
+	background: #A5DEDA;
+}
+
+.footer{
+	display: flex;
+	flex-direction: row;
+	background: #3F96FF;
+	color: white;
+	font-size: 14px;
+	line-height: 2;
+	padding: 50px;
+}
+
+.footer-links{
+	list-style: none;
+	margin: 30px 50px;
+}
+
+.footer-links a{
+	color: white;
+	text-decoration: none;
+}
+
+.footer-links a:hover{
+	color: #A5DEDA;
+}
+
+.findus a{
+	color: white;
+	text-decoration: none;
+}
+
+.quicklinks a{
+	color: white;
+	text-decoration: none;
+	/*margin: 10px;*/
+}
+
+.lighter-text{
+	color: #ECECEC;
+}
+
+svg{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    fill: white;
+}
+
+h1{
+	text-align: center;
+}
