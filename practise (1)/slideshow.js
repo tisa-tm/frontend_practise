@@ -1,3 +1,6 @@
+$(window).on("load", function() {
+  $('#loaderContainer').hide();
+});
 var slideIndex = 0;
 
 function showSlides() {

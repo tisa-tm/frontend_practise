@@ -140,11 +140,11 @@
 .tab-container-view::-webkit-scrollbar-thumb{
     /*display: none;*/
     width: 10px;
-    background: #91AAB6; 
+    background: gray; 
 }
 
 .tab-container-view::-webkit-scrollbar-thumb:hover{
-	background: #4E7789; 
+	background: black; 
 }
 
 .tab-container-view{
