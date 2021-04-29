@@ -1,0 +1,383 @@
+*{
+	margin: 0;
+	padding: 0;
+    line-height: 1.5;
+    /* font-size: 16px; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.align-center,
+.sub-navigation,
+.main-navigation,
+.float-right,
+.search-button-round,
+.search-button-wide,
+.explore-nearby-card-holder,
+.explore-nearby-card,
+.live-anywhere-card-holder,
+.become-a-host,
+.discover-experiences-card-holder,
+.inspiration-card-holder,
+.footer{
+    display: flex;
+    flex-direction: row;
+}
+
+.dropdown,
+.navigation,
+.explore-nearby-card-caption,
+.become-a-host-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    position: relative;
+    /* margin: auto; */
+    margin: 0 0 0 40px;
+}
+
+.logo img{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.navigation{
+    background: black;
+    color: white;
+    justify-content: center;
+    height: 100px;
+}
+
+.navigation-links{
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.user-menu-button{
+    /* height: 30px; */
+    padding: 5px;
+    width: 60px;
+    border-radius: 20px;
+    border: none;
+    margin: 0 10px;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 5px;
+    background: gainsboro;
+    color: black;
+    /* padding: 10px; */
+    border-radius: 20px;
+    width: 200px;
+    z-index: 2;
+}
+
+.show-dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content div{
+    padding: 15px 10px;
+    /* background-color: rebeccapurple; */
+}
+
+.hr{
+    border-bottom: 1px solid black;
+}
+
+.main-navigation{
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.sub-navigation{
+    /* display: none; */
+    background: white;
+    width: auto;
+    border-radius: 20px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    bottom: -12px;
+    /* align-self: center; */
+}
+
+.sub-navigation input{
+    background-color: transparent;
+    border: none;
+}
+
+#places-to-stay,#experiences{
+    display: flex;
+    flex-direction: row;
+    color: black;
+}
+
+.sub-navigation-card{
+    height: auto;
+    border-radius: 20px;
+    padding: 10px 20px;
+    /* padding: 5px; */
+}
+
+.sub-navigation-card::after{
+    content: "|";
+    /* height: 50px; */
+}
+
+.sub-navigation-card:hover{
+    background: gainsboro;
+}
+
+.search-button-round{
+    background: hotpink;
+    /* color: white; */
+    padding: 5px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px;
+    align-items: center;
+}
+
+.search-button-wide{
+    background: hotpink;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    margin: 5px;
+    align-items: center;
+}
+
+.float-right{
+    /* margin-left: auto; */
+    align-self: flex-end;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.align-center{
+    /* background-color: red; */
+    margin: auto;
+    /* align-self: center; */
+}
+
+.become-a-host-button{
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+    /* height: 30px; */
+    /* width: 70px; */
+}
+
+.become-a-host-button:hover{
+    background: rgb(220, 220, 220,0.2);
+}
+
+.picture{
+    background: url("../images/main-picture-2.jpg");
+    background-size: cover; 
+    /* background: black; */
+    /* background: rebeccapurple; */
+    height: 70%;
+    max-height: 600px;
+    margin: 0 40px;
+}
+
+.picture-holder{
+    background: black;
+}
+
+.tagline{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.tagline-text{
+    font-size: 1.5rem;
+}
+
+.explore-nearby{
+    margin: 80px;
+    overflow-x: auto;
+    scrollbar-width: none; /* for firefox */
+}
+
+.explore-nearby::-webkit-scrollbar{
+    display: none;
+}
+
+.explore-nearby-card{
+    margin: 30px 60px 0 0;
+    width: 400px;
+    color: black;
+}
+
+.explore-nearby img{
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+}
+
+.explore-nearby-card-caption{
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.live-anywhere{
+    margin: 80px;
+    border-radius: 20px;
+    /* background-color: rebeccapurple; */
+}
+
+.live-anywhere-card-holder{
+    overflow-x: auto;
+    /* scroll-behavior: smooth; */
+    scrollbar-width: none; /* for firefox */
+}
+
+.live-anywhere-card-holder::-webkit-scrollbar{
+    display: none;
+}
+
+.live-anywhere-card{
+    margin: 30px 60px 0 0;
+    width: 250px;
+    height: 250px;
+    color: black;
+}
+
+.live-anywhere img{
+    height: 230px;
+    width: 230px;
+    border-radius: 20px;
+}
+
+.become-a-host{
+    background: black;
+    color: white;
+    margin: 80px;
+    border-radius: 20px;
+    height: 300px;
+    justify-content: flex-end;
+}
+
+.become-a-host-card{
+    justify-content: center;
+    margin-right: 150px;
+    /* background-color: rebeccapurple; */
+}
+
+.become-a-host img{
+    height: inherit;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+.become-a-host-button-2{
+    background: white;
+    color: gray;
+    width: 100px;
+    text-align: center;
+    margin: 30px 0 0 0;
+    /* padding: 20px; */
+    /* border-radius: 20px; */
+    /* margin-top: 200px; */
+}
+
+.discover-experiences{
+    margin: 80px;
+    /* background-color: rgb(110, 156, 129); */
+}
+
+.discover-experiences-card{
+    width: 25%;
+    height: 300px;
+    margin: 30px 60px 0 0;
+    color: black;
+    /* background-color: rebeccapurple; */
+}
+
+.discover-experiences-card img{
+    width: 100%;
+    height: inherit;
+    border-radius: 20px;
+}
+
+.inspiration{
+    margin: 80px;
+}
+
+.inspiration-button-holder{
+    border-bottom: 1px solid gray;
+}
+
+.inspiration-button{
+    background: transparent;
+    border: none;
+    padding: 10px 10px 10px 0;
+    color: gray;
+}
+
+.inspiration-button:hover{
+    background: gainsboro;
+}
+
+.inspiration-card{
+    display: none;
+}
+
+.inspiration-card-column{
+    width: 24%;
+}
+
+.inspiration-card-column a{
+    padding: 10px;
+    color: gray;
+
+}
+
+.footer{
+    background: rgb(231, 231, 231);
+    padding: 80px 80px 10px 80px;
+    justify-content: center;
+    border-top: 1px solid gray;
+}
+
+.footer a{
+    padding: 5px 5px 5px 0;
+    color: gray;
+}
+
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}

@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.filter-button-holder{
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.filter-button{
+    border-radius: 20px;
+    border: 1px solid gray;
+    background: transparent;
+    padding: 10px;
+}
+.filter-button:hover{
+    border: 1px solid black;
+}
+
+
+.places-to-stay-card-holder{
+    width: 60%;
+    height: 100vh;
+    margin: 20px 20px 0 20px;
+    overflow-y: auto;
+}
+.places-to-stay-card-holder::-webkit-scrollbar{
+    display: none;
+}
+.places-to-stay-card:not(:nth-of-type(1)){
+    margin: 80px 0;
+}
+.places-to-stay-card:nth-of-type(1){
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+.place-card{ 
+    position: relative;
+    /* margin: 80px 0; */
+}
+.card-to-scroll{
+    overflow-x: auto;
+}
+.card-to-scroll::-webkit-scrollbar{
+    display: none;
+}
+.place{
+    width: 300px;
+    height: fit-content;
+}
+.place:not(:nth-of-type(1)){
+    margin-left: 10px;
+}
+.place img{
+    width: inherit;
+    height: auto;
+    border-radius: 10px;
+}
+.slide-button-holder{
+    position: absolute;
+    right: 0;
+    top: -10px;
+    margin-bottom: 20px;
+}
+.horizontal-slide-button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: gainsboro;
+    border: 1px solid gray;
+    /* margin-bottom: 40px; */
+}
+
+
+.map{
+    /* background: red; */
+    width: 40%;
+    height: 100vh;
+}
+.map img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.explore-nearby{
+    margin: 80px 20px;
+}
+.slide{
+    overflow-x: auto;
+    scrollbar-width: none; /* for firefox */
+}
+.slide::-webkit-scrollbar{
+    display: none;
+}
+.explore-nearby-card{
+    margin: 30px 60px 0 0;
+    width: 400px;
+}
+.explore-nearby img{
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+}
+.explore-nearby-card-caption{
+    justify-content: center;
+    margin-left: 20px;
+}
+
+
+.explore-all{
+    margin: 80px 20px;
+}
+.explore-all-card{
+    width: 90%;
+    height: fit-content;
+    margin: 20px 0 0 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+.explore-all-card img{
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.explore-all-card-text{
+    /* justify-content: center; */
+    margin-left: 20px;
+}
+
+
+.footer{
+    background: rgb(231, 231, 231);
+    padding: 80px 80px 10px 80px;
+    justify-content: center;
+    border-top: 1px solid gray;
+}
+.footer a{
+    padding: 5px 5px 5px 0;
+    color: gray;
+}
+.footer-card{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}

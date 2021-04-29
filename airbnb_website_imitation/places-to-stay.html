@@ -1,0 +1,284 @@
+<html>
+    <head>
+        <title>
+            Places to Stay
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/places-to-stay.css">
+    </head>
+    <body>
+
+        <!-- <nav>
+            <a href="">Stay</a>
+            <button>
+                <div>
+                    <span>Nearby</span><span>Date</span><span>People</span>
+                </div>
+            </button>
+            <a href="#">Become a host</a>
+            <div>Here will be a dropdown</div>
+        </nav>
+
+        <div class = "places-to-stay">
+            <form action="">
+                <input type="text" placeholder="Location? Where are you going">
+                <input type="date" placeholder="Check in. Add date">
+                <input type="date" placeholder="Check out. Add date">
+                <button type="submit">Search</button>
+            </form>
+        </div> -->
+
+        <div class="main-container flex-row">
+            <div class="places-to-stay-card-holder">
+                <h1>Places to stay near you</h1>
+                <div class="filter-button-holder">
+                    <button class="filter-button">Type of Place</button>
+                    <button class="filter-button">Price</button>
+                    <button class="filter-button">Instant Book</button>
+                    <button class="filter-button">Rooms and beds</button>
+                    <button class="filter-button">More Filters</button>
+                </div>
+                <div class="places-to-stay-card">
+                    <h3>Place 1</h3>
+                    <div class="place-card">
+                        <div class="slide-button-holder">
+                            <button id="left-slide-button-1" class="horizontal-slide-button" type="button">&lt;</button>
+                            <button id="right-slide-button-1" class="horizontal-slide-button" type="button">&gt;</button>
+                        </div><br>
+                        <div id="card-to-scroll-1" class="card-to-scroll flex-row">
+                            <div class="place">
+                                <img src="images/pastel.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>
+                            <div class="place">
+                                <img src="images/pastel.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>
+                            <div class="place">
+                                <img src="images/pastel.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>  
+                            <div class="place">
+                                <img src="images/pastel.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>  
+                            <div class="place">
+                                <img src="images/pastel.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>  
+                        </div>                   
+                    </div>
+                <div class="places-to-stay-card">
+                    <h3>Place 2</h3>
+                    <div class="place-card">
+                        <div class="slide-button-holder">
+                            <button id="left-slide-button-2" class="horizontal-slide-button" type="button">&lt;</button>
+                            <button id="right-slide-button-2" class="horizontal-slide-button" type="button">&gt;</button>
+                        </div><br>
+                        <div id="card-to-scroll-2" class="card-to-scroll flex-row">
+                            <div class="place">
+                                <img src="images/house.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>
+                            <div class="place">
+                                <img src="images/house.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div>
+                            <div class="place">
+                                <img src="images/house.jpg" alt="house">
+                                <p>This is a place</p>
+                                <p>Here are some features of the place</p>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "explore-nearby">
+                    <h1>Explore nearby</h1>
+                    <!-- first row -->
+                    <div class="slide">
+                    <div class="explore-nearby-card-holder flex-row">
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Kathmandu</h4>
+                                <p>15 min drive</p>
+                            </div>
+                        </div>
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Pokhara</h4>
+                                <p>3 hours</p>
+                            </div>
+                        </div>
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Bhaktapur</h4>
+                                <p>15 min</p>
+                            </div>
+                        </div>
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Bhharatpur Metro</h4>
+                                <p>15 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second row -->
+                    <div class="explore-nearby-card-holder flex-row">
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Kathmandu City</h4>
+                                <p>15 min drive</p>
+                            </div>
+                        </div>
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Pokhara</h4>
+                                <p>3 hours</p>
+                            </div>
+                        </div>
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Bhaktapur</h4>
+                                <p>15 min</p>
+                            </div>
+                        </div>
+                        <div class="explore-nearby-card flex-row">
+                            <img src="images/pastel.jpg" alt="">
+                            <div class="explore-nearby-card-caption">
+                                <h4>Bhaktapur</h4>
+                                <p>15 min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="explore-all">
+                    <div class="explore-all-card flex-row">
+                        <img src="images/house.jpg" alt="">
+                        <div class="explore-all-card-text">
+                            <h4>Title</h4>
+                            <span>characteristic 1</span>&nbsp<span>characteristic 2</span>
+                        </div>
+                    </div>
+                    <div class="explore-all-card flex-row">
+                        <img src="images/house.jpg" alt="">
+                        <div class="explore-all-card-text">
+                            <h4>Title</h4>
+                            <span>characteristic 1</span>&nbsp<span>characteristic 2</span>
+                        </div>
+                    </div>
+                    <div class="explore-all-card flex-row">
+                        <img src="images/house.jpg" alt="">
+                        <div class="explore-all-card-text">
+                            <h4>Title</h4>
+                            <span>characteristic 1</span>&nbsp<span>characteristic 2</span>
+                        </div>
+                    </div>
+                    <div class="explore-all-card flex-row">
+                        <img src="images/house.jpg" alt="">
+                        <div class="explore-all-card-text flex-column">
+                            <h4>Title</h4>
+                            <span>characteristic 1</span><span>characteristic 2</span>
+                        </div>
+                    </div>                    
+                </div>
+                <!-- Here goes a pages shifter -->
+                <!-- bring in new content without changing the url -->
+            </div>
+            <!-- <input type="range" min="1" max="100" value="50"> -->
+            </div>
+            <div class="map">
+                <!-- Here goes the map -->
+                <img src="images/map.jpg" alt="A map">
+            </div>
+        </div>
+
+        <div class = "footer flex-row">
+            <div class="footer-card">
+                <h3>ABOUT</h3>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+            </div>
+            <div class="footer-card">
+                <h3>COMMUNITY</h3>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+            </div>
+            <div class="footer-card">
+                <h3>HOST</h3>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+            </div>
+            <div class="footer-card">
+                <h3>SUPPORT</h3>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+                <a href="#">Lorem ipsum dolor</a>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script>
+            $('#left-slide-button-1').click(
+                function(){           
+                    $('#card-to-scroll-1').animate(
+                        {
+                        scrollLeft: "-=300px"
+                        }, "slow");
+                }
+            );
+            $('#right-slide-button-1').click(
+                function(){
+                    $('#card-to-scroll-1').animate(
+                        {
+                        scrollLeft: "+=300px"
+                        }, "slow");
+                }
+            );
+            $('#left-slide-button-2').click(
+                function(){           
+                    $('#card-to-scroll-2').animate(
+                        {
+                        scrollLeft: "-=300px"
+                        }, "slow");
+                }
+            );
+            $('#right-slide-button-2').click(
+                function(){
+                    $('#card-to-scroll-2').animate(
+                        {
+                        scrollLeft: "+=300px"
+                        }, "slow");
+                }
+            );
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,411 @@
+<html>
+
+<head>
+    <title>
+        Travel Website
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <nav class = "navigation">
+        <div class="main-navigation">
+            <!-- logo -->
+            <a href="index.html" class="logo"><img src="images/logo.png" alt="Company logo"></a>
+            <div class="align-center">
+                <button id="places-to-stay-button" class="navigation-links" style="border-bottom: 2px solid white;">Places to Stay</button>
+                <button id="experiences-button" class="navigation-links">Experiences</button>
+                <a href="" class="navigation-links">Online Experiences</a> 
+            </div>  
+            <div class="float-right">
+                <a class="become-a-host-button" href="become-a-host.html">Become a host</a>
+                <div class="dropdown">
+                    <button id="user-menu-dropdown-button" type="button" class="user-menu-button"><img src="images/user-menu.png" alt="User Menu" height="30" width="30"></button>
+                    <div class="dropdown-content">
+                        <div>Sign up</div>
+                        <div class="hr">Login</div>
+                        <div>Host your home</div>
+                        <div>Host an experience</div>
+                        <div>Help</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sub-navigation">
+            <div id="places-to-stay" style="display: flex; flex-direction: row;">
+                <div class="sub-navigation-card"><h6>Location</h6> <input type="text" placeholder="Where are you going?"></div>
+                <div class="sub-navigation-card"><h6>Check in</h6> <input type="date" placeholder="Add date"></div>
+                <div class="sub-navigation-card"><h6>Check out</h6> <input type="date" placeholder="Add date"></div>
+                <button type="submit" id="search-button" class="search-button-round"><img src="images/search.png" alt="Search Button"  height="30" width="30"></button>
+            </div>
+            <div id="experiences" style="display: none;">
+                <div class="sub-navigation-card"><h6>Location</h6> <input type="text" placeholder="Where are you going?"></div>
+                <div class="sub-navigation-card"><h6>Date</h6> <input type="date" placeholder="Add date"></div>
+                <button type="submit" id="search-button-2" class="search-button-round"><img src="images/search.png" alt="Search Button" height="10" width="10"></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div id = "places-to-stay" class="sub-navigation">
+        <form action="">
+            <input type="text" placeholder="Location? Where are you going">
+            <input type="date" placeholder="Check in. Add date">
+            <input type="date" placeholder="Check out. Add date">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div id = "experiences" class="sub-navigation">
+        <form action="">
+            <input type="text" placeholder="Location? Where are you going">
+            <input type="date" placeholder="Date. Add when you want to go">
+            <button type="submit"><img src="images/search.png" alt="" height="10" width="10"></button>
+        </form>
+    </div> -->
+    <div class="picture-holder">
+        <div class = "picture">
+        </div>
+    </div>
+
+    <div class="tagline">
+        <span class="tagline-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+    </div>
+
+    <div class = "explore-nearby">
+        <h1>Explore nearby</h1>
+        <!-- first row -->
+        <div class="explore-nearby-card-holder">
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Kathmandu</h4>
+                    <p>15 min drive</p>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Pokhara</h4>
+                    <p>3 hours</p>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Bhaktapur</h4>
+                    <p>15 min</p>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Bhharatpur Metro</h4>
+                    <p>15 min</p>
+                </div>
+            </a>
+        </div>
+        <!-- second row -->
+        <div class="explore-nearby-card-holder">
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Kathmandu</h4>
+                    <p>15 min drive</p>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Pokhara</h4>
+                    <p>3 hours</p>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Bhaktapur</h4>
+                    <p>15 min</p>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="explore-nearby-card">
+                <img src="images/pastel.jpg" alt="">
+                <div class="explore-nearby-card-caption">
+                    <h4>Bhharatpur Metro</h4>
+                    <p>15 min</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="live-anywhere">
+        <h1>Live anywhere</h1>
+        <div class="live-anywhere-card-holder">
+            <a href="places-to-stay.html" class="live-anywhere-card">
+                <div>
+                    <img src="images/house.jpg" alt="">
+                    <h4>Entire homes</h4>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="live-anywhere-card">
+                <div>
+                    <img src="images/house.jpg" alt="">
+                    <h4>Unique Stays</h4>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="live-anywhere-card">
+                <div>
+                    <img src="images/house.jpg" alt="">
+                    <h4>Farms and nature</h4>
+                </div>
+            </a>
+            <a href="places-to-stay.html" class="live-anywhere-card">
+                <div>
+                    <img src="images/house.jpg" alt="">
+                    <h4>Pets allowed</h4>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class = "become-a-host">
+        <div class="become-a-host-card">
+            <h2>Your world is worth sharing</h2>
+            <p>Turn your extra space into your next opportunity</p>
+            <a href="become-a-host.html" class="become-a-host-button become-a-host-button-2">Learn More</a>
+        </div>
+        <img src="images/pastel.jpg" alt="Pastel">
+    </div>
+
+    <div class = "discover-experiences">
+        <h1>Discover Experiences</h1>
+        <p>Unique activities with local experts - in person or online</p>
+        <div class = "discover-experiences-card-holder">
+            <a href="places-to-stay.html" class = "discover-experiences-card">
+                <img src="images/house.jpg" alt="">
+                <h4>Experiences</h4>
+                <p>Local things to do</p>
+            </a>
+            <a href="places-to-stay.html" class = "discover-experiences-card">
+                <img src="images/house.jpg" alt="">
+                <h4>Online Experiences</h4>
+                <p>Live, interactive activities led by Hosts.</p>
+            </a>
+            <a href="places-to-stay.html" class = "discover-experiences-card">
+                <img src="images/house.jpg" alt="">
+                <h4>Adventures</h4>
+                <p>Multi-day trips with meals and stays</p>
+            </a>
+        </div>
+    </div>
+
+    <div class = "inspiration">
+        <h1>Inspiration for future getaways</h1>
+        <div class="inspiration-button-holder">
+            <button id="popular-destinations-button" class="inspiration-button">Popular Destinations</button>
+            <button id="outdoor-adventure-button" class="inspiration-button">Outdoor Adventure</button>
+            <button id="art-and-culture-button" class="inspiration-button">Arts and Culture</button>
+            <button id="mountain-cabin-button" class="inspiration-button">Mountain Cabins</button>
+        </div>
+        <div id="popular-destinations" class="inspiration-card-holder">
+            <div class="inspiration-card-column">
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+            </div>
+            <div class="inspiration-card-column">
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+            </div>
+            <div class="inspiration-card-column">
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+            </div>
+            <div class="inspiration-card-column">
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+                <a href="places-to-stay.html">
+                    <p>City</p>
+                    <p>Place</p>
+                </a>
+            </div>
+            
+        </div>
+        <div class="inspiration-card" id="outdoor-adventure">Outdoor Adventure</div>
+            <div class="inspiration-card" id="art-and-culture">Arts and Culture</div>
+            <div class="inspiration-card" id="mountain-cabin">Mountain Cabin</div>
+    </div>
+
+    <div class = "footer">
+        <div class="footer-card">
+            <h3>ABOUT</h3>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+        </div>
+        <div class="footer-card">
+            <h3>COMMUNITY</h3>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+        </div>
+        <div class="footer-card">
+            <h3>HOST</h3>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+        </div>
+        <div class="footer-card">
+            <h3>SUPPORT</h3>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+            <a href="#">Lorem ipsum dolor</a>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script>
+        // to change the sub-navigation
+        $('#experiences-button').click(
+            function(){
+                $('#places-to-stay').hide();
+                $('#places-to-stay-button').css( "border-bottom","none");
+                $('#experiences').show();
+                $(this).css( "border-bottom","2px solid white");
+            });
+        $('#places-to-stay-button').click(
+            function(){
+                $('#experiences').hide();
+                $('#experiences-button').css( "border-bottom","none");
+                $('#places-to-stay').show();
+                $('#places-to-stay-button').css( "border-bottom","2px solid white");
+            }               
+        );
+        //to change the search button in sub-navigation
+        $('#search-button').click(
+            function(){
+                $(this).removeClass("search-button-round")
+                $(this).addClass("search-button-wide");
+                $(this).html("<img src='images/search.png' alt='Search Button' height='30' width='30'><span>Search</span>");
+            }
+        )
+        $('#search-button-2').click(
+            function(){
+                $(this).removeClass("search-button-round")
+                $(this).addClass("search-button-wide");
+                $(this).html("<img src='images/search.png' alt='Search Button' height='30' width='30'><span>Search</span>");
+            }
+        )
+        //to show user menu dropdown
+        $('#user-menu-dropdown-button').click(
+            function(){
+                $('.dropdown-content').toggleClass("show-dropdown-content");
+            }
+        );
+
+        $('#popular-destinations-button').click(
+            function(){
+                $('.inspiration-button').css('border-bottom','none');
+                $(this).css('border-bottom','3px solid black');
+                $('#popular-destinations').show();
+                $('#art-and-culture').hide();
+                $('#mountain-cabin').hide();
+                $('#outdoor-adventure').hide();
+            }
+        );
+        $('#outdoor-adventure-button').click(
+            function(){
+                $('.inspiration-button').css('border-bottom','none');
+                $(this).css('border-bottom','3px solid black');
+                $('#popular-destinations').hide();
+                $('#art-and-culture').hide();
+                $('#mountain-cabin').hide();
+                $('#outdoor-adventure').show();
+            }
+        );
+        $('#mountain-cabin-button').click(
+            function(){
+                $('.inspiration-button').css('border-bottom','none');
+                $(this).css('border-bottom','3px solid black');
+                $('#popular-destinations').hide();
+                $('#art-and-culture').hide();
+                $('#mountain-cabin').show();
+                $('#outdoor-adventure').hide();
+            }
+        );
+        $('#art-and-culture-button').click(
+            function(){
+                $('.inspiration-button').css('border-bottom','none');
+                $(this).css('border-bottom','3px solid black');
+                $('#popular-destinations').hide();
+                $('#art-and-culture').show();
+                $('#mountain-cabin').hide();
+                $('#outdoor-adventure').hide();
+            }
+        );
+    </script>
+    
+
+</body>
+</html>
