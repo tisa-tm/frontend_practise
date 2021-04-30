@@ -1,0 +1,24 @@
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 0.7rem;
+    }
+    .container{
+        margin: 40px;
+    }
+    .testimonial-card,.start-hosting,.start-hosting-second{
+        flex-direction: column;
+    }
+    .start-hosting-second,.start-hosting-first{
+        width: 100%;
+    }
+    .host-support-small{
+        flex-direction: column;
+    }
+    .testimonial-card img{
+        width: 90vw;
+        border-radius: 20px 20px 0 0;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}

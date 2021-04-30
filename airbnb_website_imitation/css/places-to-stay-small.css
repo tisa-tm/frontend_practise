@@ -1,0 +1,17 @@
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 0.7rem;
+    }
+    .float-right,.map{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .places-to-stay-card-holder{
+        width: 100%;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}

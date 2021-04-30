@@ -1,3 +1,43 @@
-.become-a-host{
-    
-}
+@media screen and (max-width: 800px) {
+    body{
+        font-size: 0.7rem;
+    }
+    .container{
+        margin: 40px;
+    }
+    .navigation{
+        display: none;
+    }
+    .picture-holder{
+        padding-top: 30px;
+        /* position: relative; */
+    }
+    .small-navigation{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0px;
+        /* background: gainsboro; */
+        width: 100%;
+        padding: 10px;
+    }
+    .tagline-text{
+        font-size: 1rem;
+    } 
+    .become-a-host{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .become-a-host-card{
+        height: fit-content;
+        padding: 40px;
+    }
+    .become-a-host img{
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+  }

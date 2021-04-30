@@ -5,9 +5,32 @@
         </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/places-to-stay.css">
+        <link rel="stylesheet" href="css/places-to-stay-small.css">
     </head>
     <body>
 
+        <nav class = "navigation">
+            <div class="main-navigation flex-row">
+                <!-- logo -->
+                <a href="index.html" class="logo"><img src="images/logo.png" alt="Company logo"></a>
+                <div class="small-navigation align-center">
+                    <input class="small-search-button" type="text" placeholder="search">
+                </div> 
+                <div class="float-right flex-row">
+                    <a class="become-a-host-button" href="become-a-host.html">Become a host</a>
+                    <div class="dropdown">
+                        <button id="user-menu-dropdown-button" type="button" class="user-menu-button"><img src="images/user-menu.png" alt="User Menu" height="30" width="30"></button>
+                        <div class="dropdown-content">
+                            <div>Sign up</div>
+                            <div class="hr">Login</div>
+                            <div>Host your home</div>
+                            <div>Host an experience</div>
+                            <div>Help</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <!-- <nav>
             <a href="">Stay</a>
             <button>
@@ -276,6 +299,12 @@
                         {
                         scrollLeft: "+=300px"
                         }, "slow");
+                }
+            );
+            //to show user menu dropdown
+            $('#user-menu-dropdown-button').click(
+                function(){
+                    $('.dropdown-content').toggleClass("show-dropdown-content");
                 }
             );
         </script>

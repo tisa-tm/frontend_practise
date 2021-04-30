@@ -10,6 +10,18 @@ a{
     text-decoration: none;
 }
 
+.slide{
+    overflow-x: auto;
+}
+.slide::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    margin: 80px;
+}
+
+
 .align-center,
 .sub-navigation,
 .main-navigation,
@@ -47,13 +59,13 @@ a{
     width: 50px;
 }
 
+
 .navigation{
     background: black;
     color: white;
     justify-content: center;
     height: 100px;
 }
-
 .navigation-links{
     padding: 10px;
     background: transparent;
@@ -70,11 +82,9 @@ a{
     border: none;
     margin: 0 10px;
 }
-
 .dropdown{
     position: relative;
 }
-
 .dropdown-content{
     display: none;
     position: absolute;
@@ -87,27 +97,21 @@ a{
     width: 200px;
     z-index: 2;
 }
-
 .show-dropdown-content{
     display: flex;
     flex-direction: column;
 }
-
 .dropdown-content div{
     padding: 15px 10px;
-    /* background-color: rebeccapurple; */
 }
-
 .hr{
     border-bottom: 1px solid black;
 }
-
 .main-navigation{
     align-items: center;
     margin-top: 20px;
     /* background-color: rebeccapurple; */
 }
-
 .sub-navigation{
     /* display: none; */
     background: white;
@@ -121,34 +125,28 @@ a{
     bottom: -12px;
     /* align-self: center; */
 }
-
 .sub-navigation input{
     background-color: transparent;
     border: none;
 }
-
 #places-to-stay,#experiences{
     display: flex;
     flex-direction: row;
     color: black;
 }
-
 .sub-navigation-card{
     height: auto;
     border-radius: 20px;
     padding: 10px 20px;
     /* padding: 5px; */
 }
-
 .sub-navigation-card::after{
     content: "|";
     /* height: 50px; */
 }
-
 .sub-navigation-card:hover{
     background: gainsboro;
 }
-
 .search-button-round{
     background: hotpink;
     /* color: white; */
@@ -200,8 +198,6 @@ a{
 .picture{
     background: url("../images/main-picture-2.jpg");
     background-size: cover; 
-    /* background: black; */
-    /* background: rebeccapurple; */
     height: 70%;
     max-height: 600px;
     margin: 0 40px;
@@ -209,6 +205,21 @@ a{
 
 .picture-holder{
     background: black;
+}
+.small-navigation{
+    display: none;
+} 
+.small-search-button{
+    border-radius: 20px;
+    height: 50px;
+    width: 400px;
+    border: none;
+}
+.small-search-button::placeholder{
+    padding: 10px;
+}
+.sticky-small-navigation{
+    display: none;
 }
 
 .tagline{
@@ -225,7 +236,7 @@ a{
 }
 
 .explore-nearby{
-    margin: 80px;
+    /* margin: 80px; */
     overflow-x: auto;
     scrollbar-width: none; /* for firefox */
 }
@@ -252,7 +263,7 @@ a{
 }
 
 .live-anywhere{
-    margin: 80px;
+    /* margin: 80px; */
     border-radius: 20px;
     /* background-color: rebeccapurple; */
 }
@@ -283,7 +294,7 @@ a{
 .become-a-host{
     background: black;
     color: white;
-    margin: 80px;
+    /* margin: 80px; */
     border-radius: 20px;
     height: 300px;
     justify-content: flex-end;
@@ -291,7 +302,7 @@ a{
 
 .become-a-host-card{
     justify-content: center;
-    margin-right: 150px;
+    margin-right: 5%;
     /* background-color: rebeccapurple; */
 }
 
@@ -312,28 +323,21 @@ a{
     /* margin-top: 200px; */
 }
 
-.discover-experiences{
-    margin: 80px;
-    /* background-color: rgb(110, 156, 129); */
-}
 
 .discover-experiences-card{
-    width: 25%;
-    height: 300px;
+    width: 250px;
+    height: auto;
     margin: 30px 60px 0 0;
     color: black;
     /* background-color: rebeccapurple; */
 }
 
 .discover-experiences-card img{
-    width: 100%;
-    height: inherit;
+    width: inherit;
+    height: auto;
     border-radius: 20px;
 }
 
-.inspiration{
-    margin: 80px;
-}
 
 .inspiration-button-holder{
     border-bottom: 1px solid gray;

@@ -24,6 +24,11 @@ a{
 }
 
 
+.container{
+    margin: 80px;
+}
+
+
 .become-a-host-card{
     background: url('../images/house-2-4.jpg');
     background-color: black;
@@ -84,11 +89,6 @@ a{
 }
 
 
-.start-hosting{
-    /* flex-wrap: wrap;*/
-    margin: 80px;
-    /* justify-content: space-around;  */
-}
 .start-hosting-first{
     width: 30%;
     /* display: flex; */
@@ -122,7 +122,7 @@ a{
 
 
 .testimonial-card-holder{
-    margin: 80px;
+    /* margin: 80px; */
     border-radius: 10px;
     box-shadow: gainsboro -1px -1px 5px;
     position: relative;
@@ -156,7 +156,7 @@ a{
 
 
 .hosting-information-card-holder{
-    margin: 80px;
+    /* margin: 80px; */
     position: relative;
 }
 .hosting-information-card{
@@ -197,10 +197,6 @@ a{
 }
 
 
-.host-support-card-holder{
-    margin: 80px;
-    /* justify-content: space-around; */
-}
 .host-support-card{
     margin: 30px 50px 0 0;
     padding: 10px;
@@ -228,9 +224,6 @@ a{
 }
 
 
-.find-out-card-holder{
-    margin: 80px;
-}
 .find-out-card{
     width: 45%;
 }
