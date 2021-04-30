@@ -1,0 +1,55 @@
+body{
+    background-color: #EAECFC;
+}
+#navi{
+    background-color: #5B4543 !important;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(232, 177, 151);
+}
+.jumbotron{
+    background-image: url("jumbotron.jpg");
+    background-size: cover;
+}
+.jumbotron-heading{
+	color: rgb(232, 177, 151);
+}
+.jumbotron .container{
+    background-color: rgb(106, 4, 254,0.7);
+}
+#jumboBtn{
+    background-color: rgb(250, 18, 99);
+    color: white;
+}
+#buyBtn{
+    position: relative;
+    top: 400px;
+    background-color: rgb(250, 18, 99);
+    color: white;
+    box-shadow: inset 5px 5px 8px #FC5C95;
+    border: none;
+}
+#buyBtn:hover{
+    box-shadow: none;
+}
+.card{
+    margin: 2px 10px;
+}
+#buyImage{
+    height: 500px;
+}
+.card-img-top{
+	height: 300px;
+}
+#cardImage{
+    height: 500px;
+}
+#footer{
+    background-color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-top: 3rem;
+}

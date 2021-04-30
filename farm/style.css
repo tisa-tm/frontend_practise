@@ -1,0 +1,100 @@
+body{
+    background-image: linear-gradient(to bottom left,#C7F3FB,#FCCEEC,#FDF7C2,#C7F3FB);
+    color: rgb(61, 1, 62);
+    font-family: Arial;
+    text-align: center;
+   /* linear-gradient(to bottom ,#06D6FB,#C7F3FB,#FDF4AA,#C7F3FB,#FBE106);
+      linear-gradient(to bottom left,#06D6FB,#C7F3FB,#FDECF7,#FDF8CE,#C7F3FB,#06D6FB)
+    linear-gradient(to bottom right,#FCCEEC 10%,#C7F3FB,#FDF7C2,#FDF7C2);
+    */
+}
+#navi{
+    background-color: rgb(72, 9, 9);
+}
+.nav-link{
+    color: white;
+    font-family: Times New Roman;
+    font-size: 1.5rem;
+    margin-right: 3rem !important;
+}
+.nav-link:hover{
+    color: rgb(246, 207, 202) !important;
+}
+#navImg{
+    box-shadow: 2px 5px 7px gray;
+    opacity: 0.95;
+}
+#navImg:hover{
+    box-shadow: inset 5px 5px 7px gray;
+    opacity: 1;
+}
+#heading1{
+    font-family: 'Varela';
+    color: rgb(128, 7, 249);
+}
+#heading2{
+    font-family: 'Montserrat';
+}
+#heading3{
+    margin-top: 1rem;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(61, 1, 62);
+}
+#mainContainer1{
+    background-color: rgb(255,255,255,0.4);
+    box-shadow: 2px 5px 7px gray; 
+}
+#mainContainer4{
+    background-color: rgb(255,255,255,0.4);
+    height: 300px;
+    box-shadow: 2px 2px 8px lightgray;
+}
+#formcontainer{
+    background-color: rgb(230, 241, 229 ,0.7);
+    font-family: 'Varela';
+    color: rgb(61, 1, 62);
+    border: none;
+    border: 0.5px solid lightgray;
+}
+#formContainer2{
+    background-color: rgb(230, 241, 229 ,0.4);
+    font-family: 'Varela';
+    border: 0.5px solid lightgray;
+}
+#tableHeader{
+    color: rgb(61, 1, 62);
+    font-family: Arial;
+}
+#tableRow{
+    font-style: italic;
+}
+.card{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+#formBtn{
+    background-color: rgb(128, 7, 249) !important;
+    box-shadow: 2px 2px 5px gray;
+    color: white;
+}
+#formBtn:hover{
+    box-shadow: inset 2px 2px 5px gray;
+}
+input{
+    width: 15rem !important;
+}
+select{
+    width: 15rem !important;
+}
+#alert1{
+    display: none;
+}
+#alert2{
+    display: none;
+}
+img{
+    height: 250px;
+    width: 100%;
+}

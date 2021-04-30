@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+    <!--google font-->
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--navigation-->
+<nav id="navi" class="navbar navbar-expand-md navbar-fixed-bottom">
+  <ul id="heading2" class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="home.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="farm1.html">Farm One</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="farm2.html">Farm Two</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="farm3.html">Farm Three</a>
+    </li>
+  </ul>
+</nav>
+<br>
+
+<!--heading-->
+<h1 id="heading1">FARM 3</h1>
+    
+<div id="mainContainer1" class="container">
+   <!--item table-->
+    <table class="table thead">
+    <thead id="tableHeader" class="thead">
+    <br>
+    <h5 id="heading2"><center>ITEM DETAILS</center></h5>
+		<tr>
+			<th scope="col">Name of Item</th>
+			<th scope="col">No of Item</th>
+		</tr>
+    </thead>
+    <tbody>
+		<tr id="tableRow">
+			<td>{{item[0]}}</td>
+			<td>{{item[1]}}</td>
+		</tr>
+    </tbody>
+    </table>
+      
+      
+<!--alerts-->
+<div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> This update has been performed.</div>
+<div class="alert alert-danger alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> This  item has been deleted.</div>
+    <!--forms-->
+    <div class="card-group">
+        <div id="formcontainer" class="card" style="margin-right: 3rem !important;">
+            <div class="card-body">
+                <form class="form" action="update1", METHOD='POST'>
+                 <center><h5>ADD AN ITEM</h5>
+                  <div class="form-group">
+                      <label for="name">Name of Item:<t></t></label>
+                      <input type="text" class="form-control" id="name", name='name'>
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd">No of Item</label>
+                    <input type="number" class="form-control" id="num" name='num'>
+                  </div></center>
+                    <center><button type="submit" id="formBtn" class="btn mb-2">Submit</button></center>
+                </form>
+            </div>
+        </div>
+        <div id="formcontainer" class="card">
+            <div class="card-body">
+                <form class="form", action='delete1', METHOD='POST'>
+                <center><h5>DELETE AN ITEM</h5>
+                <div class="form-group">
+                    <label for="name">Name of Item:<t></t></label>
+                    <input type="text" class="form-control" id="name", name='delName'>
+                </div>
+                    <center><button type="submit" id="formBtn" class="btn btn-primary mb-2">Submit</button></center></center>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
+</body>
+</html>
