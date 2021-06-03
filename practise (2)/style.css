@@ -6,7 +6,7 @@
 }
 
 body{
-	font-size: 20px;
+	font-size: 1rem;
 }
 
 .header{
@@ -17,25 +17,22 @@ body{
 	background: #65ABFF;
 	width: 100%;
 	position: relative;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .header-text{
 	padding: 10px 10px;
 	height: 40px;
-	line-height: 40px;
+	/* line-height: 40px; */
 	color: white;
 	margin-left: 40px;
-	margin-right: 40px;
-	/*background-color: red;*/
+	margin-right: 40px; 
+	display: flex;
+	align-items: center;
 }
 
 .right{
 	margin-left: auto;
-}
-
-.left{
-	float: left;
 }
 
 .header-image{
@@ -73,8 +70,6 @@ body{
 }
 
 .navigation{
-	/*border-radius: 5px;*/
-	/*width: auto;*/
 	width: 100%;
 	height: 70px;
 	background: #FAFAFA;
@@ -178,8 +173,8 @@ body{
 }
 
 .main-text{
-	margin-left: 20%;
-	margin-right: 20%;
+	/* margin-left: 20%;
+	margin-right: 20%; */
 	color: white;
 	line-height: 1.5;
 }
@@ -203,6 +198,10 @@ body{
 	line-height: 1.5;
 	display: flex;
 	flex-direction: row;
+}
+.aboutus img{
+	width: 100%;
+	height: auto;
 }
 
 .message{
@@ -249,6 +248,9 @@ body{
 	text-decoration: none;
 	color: #0072D3;
 }
+.page-shifter-page:nth-child(1){
+	border-left: solid #69C8C0 1px;;
+}
 
 .page-shifter-page:hover{
 	background: #A5DEDA;
@@ -259,7 +261,7 @@ body{
 	flex-direction: row;
 	background: #3F96FF;
 	color: white;
-	font-size: 14px;
+	font-size: 1rem;
 	line-height: 2;
 	padding: 50px;
 }

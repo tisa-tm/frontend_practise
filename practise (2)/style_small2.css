@@ -1,33 +1,36 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 	body{
-		font-size: 16px;
+		font-size: 1rem;
 	}
-
+	.margin-container{
+		margin: 25px 40px;
+	}
+	.header{
+		font-size: 1rem;
+		flex-direction: column;
+	}
+	.header-text{
+		padding: 10px 0;
+		height: 40px;
+		margin: 0;
+	}
+	.right{
+		margin-left: 0;
+	}
 	.navigation{
 		display: none;
 	}
-
 	.navigation-small-image{
 		display: block;
 		position: relative;
-		left: 85%;
-		top: 5%;
 		z-index: 2;
-
+		background: black;
+		height: 50px;
+		padding: 10px 0;
 	}
-
-	.main{
-		align-items: flex-start;
-	}
-
-	.main-text{
-		position: relative;
-		top: 25%;
-	}
-
 	.navigation-small{
 		position: absolute;
-		right: 10%;
+		/* right: 0px; */
 		background-color: white;
 		min-width: 150px;
 		list-style: none;
@@ -72,9 +75,93 @@
 	.footer{
 		flex-direction: column;
 		align-items: center;
+		font-size: 1rem;
+	}
+	.page-shifter{
+		margin: none;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	body{
+		font-size: 0.7rem;
+	}
+	.margin-container{
+		margin: 25px 20px;
+	}
+	.header{
+		font-size: 0.7rem;
+		flex-direction: column;
+	}
+	.header-text{
+		padding: 10px 0;
+		height: 40px;
+		margin: 0;
+	}
+	.right{
+		margin-left: 0;
+	}
+	.navigation{
+		display: none;
+	}
+	.navigation-small-image{
+		display: block;
+		position: relative;
+		z-index: 2;
+		background: black;
+		height: 50px;
+		padding: 10px 0;
+	}
+	.navigation-small{
+		position: absolute;
+		/* right: 0px; */
+		background-color: white;
+		min-width: 150px;
+		list-style: none;
+		z-index: 2;
 	}
 
-	.header{
+	.navigation-small a{
+		color: black;
+		padding: 10px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.navidation-small-dropdown{
+		position: relative;
+		display: inline-block;
+	}
+
+	.navigation-small-dropdown-content{
+		display: none;
+		position: absolute;
+		right: 100%;
+		margin-top: -45px;
+		background-color: white;
+		min-width: 150px;
+		list-style: none;
+		z-index: 2;
+	}
+
+	.navigation-small-dropdown:hover .navigation-small-dropdown-content{
+		display: block;
+	}
+
+	.navigation-small-image:hover .navigation-small{
+		display: block;
+	}
+
+	.aboutus{
 		flex-direction: column;
+	}
+
+	.footer{
+		flex-direction: column;
+		align-items: center;
+		font-size: 0.7rem;
+	}
+	.page-shifter{
+		margin: none;
 	}
 }
