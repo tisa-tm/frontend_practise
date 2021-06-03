@@ -1,15 +1,57 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
     body{
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
     .float-right,.map{
         display: none;
     }
     .logo{
-        display: none;
+        margin: 0 !important;
+    }
+    .small-navigation{
+        width: 80%;
     }
     .places-to-stay-card-holder{
         width: 100%;
+        margin: 10px;
+    }
+    .explore-all-card{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    body{
+        font-size: 1rem;
+    }
+    .float-right,.map{
+        display: none;
+    }
+    .logo{
+        margin: 0 !important;
+    }
+    .small-navigation input{
+        width: 80%;
+    }
+    .places-to-stay-card-holder{
+        width: 100%;
+        margin: 10px;
     }
     .footer{
         flex-direction: column;

@@ -12,6 +12,7 @@ a{
 
 .slide{
     overflow-x: auto;
+    scrollbar-width: none;
 }
 .slide::-webkit-scrollbar{
     display: none;
@@ -302,7 +303,7 @@ a{
 
 .become-a-host-card{
     justify-content: center;
-    margin-right: 5%;
+    margin-left: 5%;
     /* background-color: rebeccapurple; */
 }
 
@@ -318,9 +319,6 @@ a{
     width: 100px;
     text-align: center;
     margin: 30px 0 0 0;
-    /* padding: 20px; */
-    /* border-radius: 20px; */
-    /* margin-top: 200px; */
 }
 
 

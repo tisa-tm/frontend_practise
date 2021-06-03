@@ -1,12 +1,16 @@
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
     body{
-        font-size: 0.7rem;
+        /* background-color: rebeccapurple; */
+        font-size: 1rem;
     }
     .container{
         margin: 40px;
     }
     .testimonial-card,.start-hosting,.start-hosting-second{
         flex-direction: column;
+    }
+    .start-hosting-first{
+        margin: 0;
     }
     .start-hosting-second,.start-hosting-first{
         width: 100%;
@@ -19,6 +23,75 @@
         border-radius: 20px 20px 0 0;
     }
     .footer{
-        flex-direction: column;
+        flex-direction: row;
     }
 }
+
+@media screen and (max-width: 768px){
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-card{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    body{
+        font-size: 1rem;
+        /* background-color: red; */
+    }
+    .container{
+        margin: 20px;
+    }
+    .logo{
+        margin: 20px;
+    }
+    .become-a-host-card input, .become-a-host-card select,.become-a-host-card-text{
+        font-size: 1.5rem;
+    }
+    .become-a-host-card select option{
+        font-size: 0.7rem;
+    }
+    .testimonial-card,.start-hosting,.start-hosting-second{
+        flex-direction: column;
+    }
+    .start-hosting-first{
+        margin: 0;
+    }
+    .start-hosting-second,.start-hosting-first{
+        width: 100%;
+    }
+    .host-support-small{
+        flex-direction: column;
+    }
+    .testimonial-card img{
+        width: 90vw;
+        border-radius: 20px 20px 0 0;
+    }
+    .find-out-card-holder{
+        display: flex;
+        flex-direction: column;
+    }
+    .find-out-card{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .find-out-card:nth-child(2){
+        margin-left: 0px;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-card{
+        width: 100%;
+    }
+}
+
+
+

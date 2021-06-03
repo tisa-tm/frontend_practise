@@ -1,0 +1,147 @@
+@media screen and (max-width: 768px){
+	canvas{
+		display: none;
+	}
+	.navigation{
+		display: none;
+	}
+	.navigation-small-image{
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		height: 50px;
+		background: black;
+	}
+	.navigation-small{
+		position: absolute;
+		top: 30px;
+		right: 2px;
+		background-color: white;
+		min-width: 150px;
+		list-style: none;
+		z-index: 2;
+	}
+	.navigation-small a{
+		color: black;
+		padding: 10px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.navigation-small-dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.navigation-small-dropdown-content{
+		display: none;
+		position: absolute;
+		right: 100%;
+		margin-top: -45px;
+		background-color: white;
+		min-width: 150px;
+		list-style: none;
+		z-index: 2;
+	}
+	.navigation-small-dropdown:hover .navigation-small-dropdown-content{
+		display: block;
+	}
+	.navigation-small-image:hover .navigation-small{
+		display: block;
+	}
+	.footer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		direction: row;
+	}
+
+	.footer-image{
+		width: 20%;
+	}
+
+	.footer-text{
+		margin-left: 5%;
+		width: 70%;
+	}
+
+	.footer-text img{
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 576px) {
+	body{
+		font-size: 0.8rem;
+	}
+	.navigation{
+		display: none;
+	}
+	.navigation-small-image{
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		height: 50px;
+		background: black;
+	}
+	.navigation-small{
+		position: absolute;
+		top: 30px;
+		right: 2px;
+		background-color: white;
+		min-width: 150px;
+		list-style: none;
+		z-index: 2;
+	}
+	.navigation-small a{
+		color: black;
+		padding: 10px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.navigation-small-dropdown{
+		position: relative;
+		display: inline-block;
+	}
+	.navigation-small-dropdown-content{
+		display: none;
+		position: absolute;
+		right: 100%;
+		margin-top: -45px;
+		background-color: white;
+		min-width: 150px;
+		list-style: none;
+		z-index: 2;
+	}
+	.navigation-small-dropdown:hover .navigation-small-dropdown-content{
+		display: block;
+	}
+	.navigation-small-image:hover .navigation-small{
+		display: block;
+	}
+	.image-container-text-header{
+		font-size: 2rem;
+	}
+	.image-container-text-body{
+		font-size: 1rem;
+	}
+	canvas{
+		display: none;
+	}
+	.footer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		direction: column;
+	}
+	.footer-image{
+		width: 20%;
+	}
+	.footer-text{
+		margin-left: 5%;
+		width: 70%;
+	}
+	.footer-text img{
+		width: 100%;
+	}
+}
+

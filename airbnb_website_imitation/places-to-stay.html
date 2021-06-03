@@ -31,25 +31,6 @@
                 </div>
             </div>
         </nav>
-        <!-- <nav>
-            <a href="">Stay</a>
-            <button>
-                <div>
-                    <span>Nearby</span><span>Date</span><span>People</span>
-                </div>
-            </button>
-            <a href="#">Become a host</a>
-            <div>Here will be a dropdown</div>
-        </nav>
-
-        <div class = "places-to-stay">
-            <form action="">
-                <input type="text" placeholder="Location? Where are you going">
-                <input type="date" placeholder="Check in. Add date">
-                <input type="date" placeholder="Check out. Add date">
-                <button type="submit">Search</button>
-            </form>
-        </div> -->
 
         <div class="main-container flex-row">
             <div class="places-to-stay-card-holder">
@@ -268,46 +249,7 @@
         </div>
 
         <script type="text/javascript" src="js/jquery.js"></script>
-        <script>
-            $('#left-slide-button-1').click(
-                function(){           
-                    $('#card-to-scroll-1').animate(
-                        {
-                        scrollLeft: "-=300px"
-                        }, "slow");
-                }
-            );
-            $('#right-slide-button-1').click(
-                function(){
-                    $('#card-to-scroll-1').animate(
-                        {
-                        scrollLeft: "+=300px"
-                        }, "slow");
-                }
-            );
-            $('#left-slide-button-2').click(
-                function(){           
-                    $('#card-to-scroll-2').animate(
-                        {
-                        scrollLeft: "-=300px"
-                        }, "slow");
-                }
-            );
-            $('#right-slide-button-2').click(
-                function(){
-                    $('#card-to-scroll-2').animate(
-                        {
-                        scrollLeft: "+=300px"
-                        }, "slow");
-                }
-            );
-            //to show user menu dropdown
-            $('#user-menu-dropdown-button').click(
-                function(){
-                    $('.dropdown-content').toggleClass("show-dropdown-content");
-                }
-            );
-        </script>
+        <script type="text/javascript" src="js/places-to-stay.js"></script>
 
     </body>
 </html>

@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>Hello</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style_small.css">
-	<link rel="stylesheet" type="text/css" href="slideshow.css">
-	<link rel="stylesheet" type="text/css" href="style_rainfall.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_small.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/slideshow.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style_rainfall.css">
 </head>
 <body>
 	<nav class="navigation">
@@ -26,51 +26,30 @@
 		</div>
 	</nav>
 
-
-	<div class="slideshow-container">
 		<!-- Navigation for small screens/ Hamburger Menu -->
-		<div class = "navigation-small-image">
-			<img src="images/navigation (1).png" height="35" width = "50">
-			<div class = "navigation-small">
-				<a class = "navigation-small-link" href="#">Home</a> 
-				<a class = "navigation-small-link" href="#">About us</a>
-				<a class = "navigation-small-link" href="#">Downloads</a>
-				<div class = "navigation-small-dropdown"><a class = "navigation-small-link" href="#">Dropdown<img src ="images/dropdown_small.png" height = "9" width = "10" style = "margin-left: 2px;">
-						<div class = "navigation-small-dropdown-content">
-							<a href="#">Dropdown 1</a>
-							<a href="#">Dropdown 2</a>
-							<a href="#">Dropdown 3</a>
-						</div>
-				</a></div>
-			</div>
+	<div class = "navigation-small-image">
+		<img src="images/navigation (1).png" height="35" width = "50">
+		<div class = "navigation-small">
+			<a class = "navigation-small-link" href="#">Home</a> 
+			<a class = "navigation-small-link" href="#">About us</a>
+			<a class = "navigation-small-link" href="#">Downloads</a>
+			<div class = "navigation-small-dropdown"><a class = "navigation-small-link" href="#">Dropdown<img src ="images/dropdown_small.png" height = "9" width = "10" style = "margin-left: 2px;">
+					<div class = "navigation-small-dropdown-content">
+						<a href="#">Dropdown 1</a>
+						<a href="#">Dropdown 2</a>
+						<a href="#">Dropdown 3</a>
+					</div>
+			</a></div>
 		</div>
-		<div class="mySlides fade">
-				<img class = "slideshow-image" src="images/slideshow (1).jpg">
-		</div>
-		<div class="mySlides fade">
-				<img class = "slideshow-image" src="images/slideshow (4).jpg" style="width:100%">
-		</div>
-		<div class="mySlides fade">
-				<img class = "slideshow-image" src="images/slideshow (3).jpg" style="width:100%">
-		</div>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
 
-		<div class = "slideshow-text">
-			<p class = "slideshow-text-header">Welcome!</p>
-			<p class = "slideshow-text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	<div class="image-container">
+		<div class = "image-container-text">
+			<p class = "image-container-text-header">Welcome!</p>
+			<p class = "image-container-text-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua.</p>
 			<button class = "call-to-action">Learn More</button>
 		</div>
-
-		<div class = "dot-container" style="text-align:center">
-			<span class="dot" onclick="currentSlide(1)"></span> 
-			<span class="dot" onclick="currentSlide(2)"></span> 
-			<span class="dot" onclick="currentSlide(3)"></span> 
-		</div>
-	</div>
-	<div id="loaderContainer">
-  		<div class="loader"></div>
 	</div>
 
 	<div class = "aboutus margin-container">
@@ -130,8 +109,8 @@
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 		</div>	
 	</div>
-	<script type="text/javascript" src = "my.js"></script>
-	<script type="text/javascript" src = "jquery.js"></script>
-	<script type="text/javascript" src = "slideshow.js"></script>
+	<script type="text/javascript" src = "js/my.js"></script>
+	<script type="text/javascript" src = "js/jquery.js"></script>
+	<script type="text/javascript" src = "js/slideshow.js"></script>
 </body>
 </html>

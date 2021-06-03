@@ -77,6 +77,47 @@ body{
 	margin: 50px 40px;
 }
 
+.image-container{
+	background: url('../images/slideshow\ \(1\).jpg');
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.image-container-text{
+	width: 70%;
+}
+.image-container-text-header{
+	font-size: 5rem;
+	color: white;
+  }
+  
+  .image-container-text-body{
+	font-size: 1.5rem;
+	color: white;
+	line-height: 1.5;
+  }
+  
+  .call-to-action{
+	padding: 15px;
+	color: #E7CE7C;
+	background: #17ADCE;
+	margin-top: 20px;
+	font-size: 20px;
+  }
+  .flex-col{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+  }
+.aboutus{
+	display: flex;
+	flex-direction: column;
+}
+
 .aboutus-header{
 	font-size: 50px;
 	color: gray;
@@ -91,6 +132,8 @@ body{
 .container-news{
 	background: #9D9895;
 	padding: 40px;
+	display: flex;
+	flex-direction: column;
 }
 
 .news-section{
@@ -100,7 +143,7 @@ body{
 }
 
 .news-section-header{
-	font-size: 50px;
+	font-size: 1.5rem;
 	line-height: 1.5;
 	text-align: center;
 	padding-bottom: 20px;
@@ -113,7 +156,7 @@ body{
 	background: #9D9895;
 	padding: 20px;
 	position: relative;
-	height: 200px;
+	height: auto;
 }
 
 .news:hover{
@@ -124,7 +167,7 @@ body{
 }
 
 .news-header{
-	font-size: 30px;
+	font-size: 1.5rem;
 	line-height: 1.5;
 	color: #F5E8DB;
 }
@@ -136,7 +179,7 @@ body{
 .news-date{
 	margin-top: 5%;
 	float: left;
-	font-size: 12px;
+	font-size: 0.7rem;
 }
 
 .news-readmore{
@@ -156,16 +199,17 @@ body{
 .footer{
 	background: url("images/background (1).jpg");
 	background-size: contain;
-	position: relative;
+	/* position: relative; */
+	display: flex;
 	color: #E7CE7C;
-	height: 400px;
+	height: auto;
 }
 
 
 .footer-text-body{
 	color: white;
 }
-
+/* 
 @media screen and (min-width: 900px){
 	.footer-text{
 		position: absolute;
@@ -180,7 +224,7 @@ body{
 		left: 5%;
 		margin-right: 40px;
 	}
-}
+} */
 
 
 hr{

@@ -136,6 +136,7 @@ a{
     height: 100vh;
     margin: 20px 20px 0 20px;
     overflow-y: auto;
+    scrollbar-width: none;
 }
 .places-to-stay-card-holder::-webkit-scrollbar{
     display: none;
@@ -153,6 +154,7 @@ a{
 }
 .card-to-scroll{
     overflow-x: auto;
+    scrollbar-width: none;
 }
 .card-to-scroll::-webkit-scrollbar{
     display: none;
