@@ -1,3 +1,8 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
 body{
 	background-color: #F2E6FF;
 	color: black;
@@ -12,24 +17,19 @@ body{
 
 .container{
 	/*for centering this container*/
-	position: absolute;
-	top: 0;
-	bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-	width: 70%;
-	height: 80%;
+	width: 100vw;
+	height: 100vh;
 	/*for centering the items in this container*/
-	align-items: center;
   	display: flex;
   	flex-direction: column;
   	justify-content: center;
-  	/*border: solid black;*/
+	align-items: center;
+  	/* border: solid black; */
 }
 .sparkle{
-	width: 70%;
-	height: 70%;
+	width: 50%;
+	height: auto;
+	padding: 100px;
 	/*for centering the items in this container*/
 	align-items: center;
   	display: flex;
@@ -38,23 +38,12 @@ body{
 	background-image: linear-gradient(to right, #D9B3FF 0%, #FF99AA 50%, #D9B3FF 100%);
 	background-size: 300% 300%;
 	animation: gradient 2s ease infinite;
+	/* -moz-animation: gradient 2s ease infinite; */
 	font-size: 30px;
 	box-shadow: 2px 2px 2px gray,
 			-2px -2px 5px lightgray;
-	/*border: solid black;*/
+	text-align: center;
 }
-/*button{
-	background-color: #FFF899;
-	background-color: #FBC442;
-	padding: 10px 10px;
-	height: 40px;
-	width: 100px;
-	margin-right: 20px;
-	margin-left: 20px;
-	border: none;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px gray;
-}*/
 			 
 .inp{
 	width: 30px;
@@ -70,8 +59,33 @@ body{
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px gray;
 	color: #746D6D;
-			 /*-2px -2px 5px lightgray;*/
+}
 
+@media screen and (max-width: 768px) {
+	#quote{
+		font-size: 1rem;
+	}
+	#clock{
+		font-size: 1.75rem;
+	}
+	.sparkle{
+		padding: 70px;
+	}
+	/* .container{
+		justify-content: flex-start;
+		margin-top: 30%;
+	} */
+}
+@media screen and (max-width: 576px) {
+	#quote{
+		font-size: 1rem;
+	}
+	#clock{
+		font-size: 1rem;
+	}
+	.sparkle{
+		padding: 50px;
+	}
 }
 
 
