@@ -1,12 +1,7 @@
 body{
-    background-image: linear-gradient(to bottom left,#C7F3FB,#FCCEEC,#FDF7C2,#C7F3FB);
+    /* background-image: linear-gradient(to bottom left,#C7F3FB,#FCCEEC,#FDF7C2,#C7F3FB); */
     color: rgb(61, 1, 62);
     font-family: Arial;
-    text-align: center;
-   /* linear-gradient(to bottom ,#06D6FB,#C7F3FB,#FDF4AA,#C7F3FB,#FBE106);
-      linear-gradient(to bottom left,#06D6FB,#C7F3FB,#FDECF7,#FDF8CE,#C7F3FB,#06D6FB)
-    linear-gradient(to bottom right,#FCCEEC 10%,#C7F3FB,#FDF7C2,#FDF7C2);
-    */
 }
 #navi{
     background-color: rgb(72, 9, 9);
